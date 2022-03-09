@@ -5,8 +5,8 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "Your Collection";
-const description = "Remember to replace this description";
+const namePrefix = "Capybara";
+const description = "The Capybara Collection!";
 const baseUri = "ipfs://NewUriToReplace";
 
 const solanaMetadata = {
@@ -15,7 +15,7 @@ const solanaMetadata = {
   external_url: "https://www.youtube.com/c/hashlipsnft",
   creators: [
     {
-      address: "7fXNuer5sbZtaTEPhtJ5g5gNtuyRoKkvxdjEjEnPN4mC",
+      address: "0x04e8f3fd58Fd0e186e4dc228E4eed372Cf2ADBB7",
       share: 100,
     },
   ],
@@ -24,26 +24,123 @@ const solanaMetadata = {
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 5,
+    growEditionSizeTo: 10,
     layersOrder: [
       { name: "Background" },
-      { name: "Eyeball" },
-      { name: "Eye color" },
-      { name: "Iris" },
-      { name: "Shine" },
-      { name: "Bottom lid" },
-      { name: "Top lid" },
+      { name: "Base" },
+      { name: "Clothes" },
+      { name: "Eyes" },
+      { name: "Miscellaneous" },
+      { name: "Headgears" },
+      { name: "Mouth" },
+      { name: "Ilong" },
+    ],
+  },
+
+  {
+    growEditionSizeTo: 25,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Base" },
+      { name: "Clothes" },
+      { name: "Eyes" },
+      { name: "Miscellaneous" },
+      { name: "Headgears" },
+      { name: "Mouth" },
+    ],
+  },
+
+  {
+    growEditionSizeTo: 40,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Base" },
+      { name: "Eyes" },
+      { name: "Miscellaneous" },
+      { name: "Headgears" },
+      { name: "Mouth" },
+      { name: "Ilong" },
+    ],
+  },
+
+  {
+    growEditionSizeTo: 55,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Base" },
+      { name: "Clothes" },
+      { name: "Eyes" },
+      { name: "Miscellaneous" },
+      { name: "Mouth" },
+      { name: "Ilong" },
+    ],
+  },
+
+  {
+    growEditionSizeTo: 75,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Base" },
+      { name: "Clothes" },
+      { name: "Eyes" },
+      { name: "Headgears" },
+      { name: "Mouth" },
+    ],
+  },
+
+  {
+    growEditionSizeTo: 105,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Base" },
+      { name: "Clothes" },
+      { name: "Eyes" },
+      { name: "Mouth" },
+    ],
+  },
+
+  {
+    growEditionSizeTo: 135,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Base" },
+      { name: "Eyes" },
+      { name: "Miscellaneous" },
+      { name: "Mouth" },
+    ],
+  },
+
+  {
+    growEditionSizeTo: 155,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Base" },
+      { name: "Clothes" },
+      { name: "Eyes" },
+      { name: "Miscellaneous" },
+      { name: "Mouth" },
+    ],
+  },
+
+  {
+    growEditionSizeTo: 185,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Base" },
+      { name: "Eyes" },
+      { name: "Headgears" },
+      { name: "Mouth" },
     ],
   },
 ];
 
-const shuffleLayerConfigurations = false;
+const shuffleLayerConfigurations = true;
 
 const debugLogs = false;
 
 const format = {
-  width: 512,
-  height: 512,
+  width: 2048,
+  height: 2048,
   smoothing: false,
 };
 
